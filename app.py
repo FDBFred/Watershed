@@ -173,7 +173,7 @@ with st.sidebar:
     api_key = st.text_input("OpenTopography Token", type="password")
     
     st.markdown("---")
-    epsilon = st.slider("Simplification Delta", 0.00001, 0.0005, 0.0001, format="%.5f")
+    epsilon = st.slider("Simplification Delta", 0.00001, 0.0005, 0.0001, step=0.00001, format="%.5f")
     eye_height = st.slider("Observer Height Offset (m)", 1.0, 3.0, 1.75, 0.25)
     analyze_btn = st.button("Initialize Pipeline", type="primary")
 
