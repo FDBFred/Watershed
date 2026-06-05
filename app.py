@@ -271,7 +271,7 @@ if analyze_btn:
                                 autosize=True, scene=dict(aspectratio=dict(x=1, y=1, z=0.22)),
                                 margin=dict(l=0, r=0, b=0, t=0)
                             )
-                            st.plotly_chart(fig, use_container_width=True)
+                            st.plotly_chart(fig, width="stretch")
                             
 
                             # --- 100% Offline Standalone 3D HTML Export ---
